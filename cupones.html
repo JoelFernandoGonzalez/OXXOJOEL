@@ -18,49 +18,35 @@
 	top: 0px;
 	z-index:1000;
 }
-.Texto {
+
+.JoelC {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
-	font-weight: bold;
-	color: #FFF;
-	text-decoration: none;
-}
-.JoelB {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
 	color: #000;
 	text-decoration: none;
-	background-color: #FADC2D;
-	height: 30px;
+	background-color: #ed3434;
+	padding: 0px;
+	height: 100px;
 	width: 100%;
+	left: 0px;
+	margin-top: 0px;
+	text-align: center;
+	position:fixed;
+}
+.JoelE {
+	color: #FFF;
+	text-decoration: none;
+	height: 35px;
+	width: 100%;
+	background-color: #FADC2D;
+	left: 0px;
 	margin-top: 100px;
 	z-index:1000;
 }
 
-        .aa {
-        
-		    width: 100%;
-            height: 500px;
-            overflow: hidden;
-            position: relative;
-			display: flex;
-            justify-content: center;
-            align-items: center;
-			margin-top:0px;
-        }
-		
-		body {
-            margin: 0;
-            padding: 0;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        
         .slider-container {
             width: 100%;
-            height:500px;
+            height: 500px;
             overflow: hidden;
             position: relative;
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
@@ -93,7 +79,15 @@
             76% { transform: translateX(-66.66%); }
             100% { transform: translateX(-66.66%); }
         }
-		.hover-sombra {
+
+.Texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.hover-sombra {
  text-decoration:none;
  color: #FFF;
  transition: all 0.3s ease;
@@ -104,7 +98,17 @@
  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
  transform: translateY(-2px);
 }
+.imagen-brillante img {
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 2, 0.2);
+object-fit: cover;
+transition: all 0.5s ease;
+}
 
+.imagen-brillante:hover img {
+filter: brightness(1.3) drop-shadow(0 0 5px rgba(66, 255, 0, 0.8));
+transform: scale(1.02);
+}
 </style>
 </head>
 
@@ -112,8 +116,8 @@
 <div class="Joel">
   <table width="90%" border="0" align="center">
     <tr>
-      <td width="20%"><img src="oxxo-logo.png" width="190" height="95"></td>
-      <td width="20%"><div align="center" class="Texto"><a href="cupones.html" class="hover-sombra">CUPONES</a></div></td>
+      <td width="20%"><a href="index.html"><img src="oxxo-logo.png" width="190" height="95"></a></td>
+      <td width="20%"><div align="center" class="Texto"><a href="index.html" class="hover-sombra">INICIO</a></div></td>
       <td width="20%"><div align="center" class="Texto"><a href="promociones.html" class="hover-sombra">PROMOCIONES</a></div></td>
       <td width="20%"><div align="center" class="Texto"><span class="Texto"><span class="Texto"><a href="contacto.html" class="hover-sombra">CONTACTO</a></span></span></div></td>
       <td width="20%"><a href="https://www.facebook.com/OXXOTiendas/?locale=en_GB"><img src="facebook logo.png" height="80"></a></td>
@@ -121,53 +125,35 @@
     </tr>
   </table>
 </div>
-<div class="JoelB"></div>
-
+<div class="JoelE"></div>
 
 <div class="aa">
     <div class="slider-container">
         <div class="slider">
             <div class="slide">
-                <img src="a.png" alt="Imagen 1">
+              <img src="c1.png" alt="Imagen 1">
             </div>
-            <div class="slide">
-                <img src="b.png" alt="Imagen 2">
+            <div class="slide"><img src="c3.png" alt="Imagen 3">
+              <img src="c2.png" alt="Imagen 2">
             </div>
-            <div class="slide">
-                <img src="c.png" alt="Imagen 3">
-            </div>
+            <div class="slide"></div>
         </div>
     </div>
 </div>
-<table width="60%" border="0" align="center">
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td><div align="center"><img src="armatufiesta.png" width="270" height="271"></div></td>
-    <td><div align="center"><img src="recetario.png" width="271" height="271"></div></td>
-    <td><div align="center"><img src="localizatutienda.png" width="271" height="271"></div></td>
-  </tr>
-</table>
-<table width="70%" border="0" align="center">
-  <tr>
-    <td colspan="2"><div align="center">
-      <h2>OXXO TE ACOMPAÑA EN CADA MOMENTO    </h2>
-    </div></td>
-  </tr>
-  <tr>
-    <td colspan="2"><div align="center"></div></td>
-  </tr>
-  <tr>
-    <td width="50%"><div align="center"><img src="historiasoxxo.png" width="498" height="271"></div></td>
-    <td width="50%"><div align="center"><img src="conócenos.png" width="498" height="271"></div></td>
-  </tr>
-  <tr>
-    <td colspan="2"><div align="center"><img src="oxxotips.png" width="498" height="271"></div></td>
-  </tr>
-</table>
-<p>&nbsp;</p>
+<div align="center">
+  <table width="90%" border="0">
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="promo1.png" width="324" height="400" class="imagen-brillante"></div></td>
+      <td><div align="center"><img src="promo2.png" width="324" height="400" class="imagen-brillante"></div></td>
+      <td><div align="center"></div>
+      <div align="center"><img src="promo3.png" width="324" height="400"></div></td>
+    </tr>
+  </table>
+</div>
 </body>
 </html>

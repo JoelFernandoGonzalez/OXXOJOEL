@@ -3,8 +3,138 @@
 <head>
 <meta charset="utf-8">
 <title>Documento sin título</title>
+<style type="text/css">
+.JoelD {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #000;
+	text-decoration: none;
+	background-color: #ed3434;
+	height: 100px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index:1000;
+	position:fixed;
+}
+.JoelF {
+	height: 35px;
+	width: 100%;
+	background-color: #FADC2D;
+	left: 0px;
+	margin-top: 100px;
+	z-index:1000;
+}
+.Texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+ .slider-container {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+
+        }
+        
+        .slider {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 12s infinite;
+        }
+        
+        .slide {
+            width: 33.33%;
+            height: 100%;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(0); }
+            38% { transform: translateX(-33.33%); }
+            71% { transform: translateX(-33.33%); }
+            76% { transform: translateX(-66.66%); }
+            100% { transform: translateX(-66.66%); }
+        }
+		.hover-sombra {
+ text-decoration:none;
+ color: #FFF;
+ transition: all 0.3s ease;
+ text-shadow: 0 0 0px rgba(0,0,0,0);
+}
+.hover-sombra:hover {
+ color: #EA5E1E;
+ text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+ transform: translateY(-2px);
+}
+.imagen-brillante img {
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 2, 0.2);
+object-fit: cover;
+transition: all 0.5s ease;
+}
+
+.imagen-brillante:hover img {
+filter: brightness(1.3) drop-shadow(0 0 5px rgba(66, 255, 0, 0.8));
+transform: scale(1.02);
+}
+</style>
 </head>
 
 <body>
+<div class="JoelD">
+ <table width="90%" border="0" align="center">
+    <tr>
+      <td width="20%"><a href="index.html"><img src="oxxo-logo.png" width="190" height="95"></a></td>
+      <td width="20%"><div align="center" class="Texto"><a href="index.html" class="hover-sombra">INICIO</a></div></td>
+      <td width="20%"><div align="center" class="Texto"><a href="cupones.html" class="hover-sombra">CUPONES</a></div></td>
+      <td width="20%"><div align="center" class="Texto"><span class="Texto"><span class="Texto"><a href="contacto.html" class="hover-sombra">CONTACTO</a></span></span></div></td>
+      <td width="20%"><a href="https://www.facebook.com/OXXOTiendas/?locale=en_GB"><img src="facebook logo.png" height="80"></a></td>
+      <td width="20%"><a href="https://www.instagram.com/tiendasoxxo/?hl=es"><img src="Instagram logo.png" height="70"></a></td>
+    </tr>
+  </table>
+</div>
+<div class="JoelF"></div>
+
+<div class="aa">
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+              <img src="promogrande1.png" alt="Imagen 1">
+            </div>
+            <div class="slide">
+              <img src="promogrande2.png" alt="Imagen 2">
+            </div>
+            <div class="slide">
+              <img src="promogrande3.png" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+</div>
+<table width="90%" border="0" align="center">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center"><img src="promo4.png" width="324" height="400" class="imagen-brillante"></div></td>
+    <td><div align="center"></div>
+    <div align="center"><img src="promo5.png" width="324" height="400" class="imagen-brillante"></div></td>
+    <td><div align="center"></div>
+    <div align="center"><img src="promo6.png" width="324" height="400" class="imagen-brillante"></div></td>
+  </tr>
+</table>
 </body>
 </html>
